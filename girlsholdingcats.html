@@ -1,76 +1,107 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
+	<title>
       Girls + Cats
     </title>
-  <body>
-    <table style="width: 100%" border="0">
-      <tbody>
-        <tr align="center">
-          <td colspan="4" rowspan="1"><img alt="Cat Memes" src="images/girlsholdingcats.png"></td>
-        </tr>
-	  </tbody>
-	</table>
-   </body>
-    <style type="text/css">
-    .bgcolor {
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: #87CEEB;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.footer {
+	text-align: center;
+	padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-    .tablebg {
-    background-color: #FFFFFF;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-    .titlerow {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #008000;
-    }
-    </style>
-  </head>
-  <body class="bgcolor">
-    <center>
-    <table BORDER=0 CELLSPACING=5 CELLPADDING=0 WIDTH="640">
-    <tr align="center">
-    <td><img src="images/ghc/ghc1.jpg" alt="GHC1" /></td>
-    <td><img src="images/ghc/ghc2.jpg" alt="GHC2" /></td>
-    </tr>
-	<tr align="center">
-    <td><img src="images/ghc/ghc3.jpg" alt="GHC3" /></td>
-    <td><img src="images/ghc/ghc4.jpg" alt="GHC4" /></td>
-    </tr>
-    <tr align="center">
-    <td><img src="images/ghc/ghc5.jpg" alt="GHC5" /></td>
-    <td><img src="images/ghc/ghc6.jpg" alt="GHC6" /></td>
-    </tr>
-	<tr align="center">
-    <td><img src="images/ghc/ghc7.jpg" alt="GHC7" /></td>
-    <td><img src="images/ghc/ghc8.jpg" alt="GHC8" /></td>
-    </tr>
-    <tr align="center">
-    <td><img src="images/ghc/ghc9.jpg" alt="GHC9" /></td>
-    <td><img src="images/ghc/ghc10.jpg" alt="GHC10" /></td>
-    </tr>
-	<table style="width: 100%" border="0">
-	<tr align="center">
-    <td><img src="images/ghc/ghc11.jpg" alt="GHC11" /></td>
-    </tr>
-	<tr align="center">
-    <td><img src="images/ghc/ghc12.jpg" alt="GHC12" /></td>
-    </tr>
-	<tr align="center">
-    <td><img src="images/ghc/ghc13.jpg" alt="GHC13" /></td>
-    </tr>
-	</table>
-    <table style="width: 100%" border="0">
-      <tbody>
-        <tr align="center">
-	   <td style="width: 295.43px; text-align: center;"><a href="index.html"><img
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <img alt="Girls + Cats" src="images/girlsholdingcats.png">
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/ghc/ghc1.jpg" style="width:100%">
+    <img src="images/ghc/ghc5.jpg" style="width:100%">
+    <img src="images/ghc/ghc9.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/ghc/ghc2.jpg" style="width:100%">
+    <img src="images/ghc/ghc6.jpg" style="width:100%">
+    <img src="images/ghc/ghc10.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/ghc/ghc3.jpg" style="width:100%">
+    <img src="images/ghc/ghc7.jpg" style="width:100%">
+    <img src="images/ghc/ghc11.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/ghc/ghc4.jpg" style="width:100%">
+    <img src="images/ghc/ghc8.jpg" style="width:100%">
+	<img src="images/ghc/ghc12.jpg" style="width:100%">
+	<img src="images/ghc/ghc13.jpg" style="width:100%">
+  </div>
+</div>
+<div class="footer">
+	<a href="index.html"><img
 		  alt="Home Page" src="images/homepage.png"></a><br>
-	   </td>
-	</tr>
-      </tbody>
-    </table>
     <p><br>
     </p>
-  </body>
+</div>
+</body>
 </html>

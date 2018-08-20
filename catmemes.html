@@ -1,54 +1,99 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Cat Memes
+	<title>
+      catmemes
     </title>
-  <body>
-    <table style="width: 100%" border="0">
-      <tbody>
-        <tr align="center">
-          <td colspan="4" rowspan="1"><img alt="Cat Memes" src="images/catmemes.png"></td>
-        </tr>
-	  </tbody>
-	</table>
-   </body>
-    <style type="text/css">
-    .bgcolor {
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: #87CEEB;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.footer {
+	text-align: center;
+	padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-    .tablebg {
-    background-color: #FFFFFF;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-    .titlerow {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #008000;
-    }
-    </style>
-  </head>
-  <body class="bgcolor">
-    <center>
-    <table BORDER=0 CELLSPACING=5 CELLPADDING=0 WIDTH="640">
-    <tr align="center">
-    <td><img src="images/catmemes/catmeme1.jpg" alt="Lamp Cat" /></td>
-    <td><img src="images/catmemes/catmeme2.jpg" alt="Cat Blow Kiss" /></td>
-    </tr>
-    <tr align="center">
-    <td><img src="images/catmemes/catmeme3.jpg" alt="Awake" /></td>
-    <td><img src="images/catmemes/catmeme4.jpg" alt="Internet Cat"/></td>
-    </tr>
-	
-    <table style="width: 100%" border="0">
-      <tbody>
-        <tr align="center">
-	   <td style="width: 295.43px; text-align: center;"><a href="index.html"><img
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <img alt="Cat Memes" src="images/catmemes.png">
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/catmemes/catmeme1.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/catmemes/catmeme2.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/catmemes/catmeme3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/catmemes/catmeme4.jpg" style="width:100%">
+
+  </div>
+</div>
+<div class="footer">
+	<a href="index.html"><img
 		  alt="Home Page" src="images/homepage.png"></a><br>
-	   </td>
-	</tr>
-      </tbody>
-    </table>
     <p><br>
     </p>
-  </body>
+</div>
+</body>
 </html>
