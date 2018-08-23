@@ -118,6 +118,7 @@ body {
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Page 1')" id="defaultOpen">Page 1</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">To Bottom</button>
 </div>
 
 <div id="Page 1" class="tabcontent">
@@ -171,6 +172,11 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 10000;
+    document.documentElement.scrollTop = 10000;
+}
 </script>
 <div class="footer">
 	<a href="index.html"><img
